@@ -1,0 +1,1004 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Professional Portfolio Naufal Rafif — Informatics Engineering Graduate, Software Engineering, System Analysis &amp; Data Management.">
+  <meta name="author" content="Naufal Rafif">
+  <title>Naufal Rafif - Professional Portfolio</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Pure CSS Stylesheet (Zero Frameworks, Zero Build Steps) -->
+  <link rel="stylesheet" href="css/style.css?v=20261015.4">
+
+  <!-- Vanilla JavaScript -->
+  <script src="js/script.js?v=20261015.4" defer></script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. WELCOME LOADING SCREEN (Intro Experience)
+       ======================================================================== -->
+  <div id="welcomeScreen" class="welcome-screen" role="progressbar" aria-label="Loading portfolio">
+    
+    <!-- Top Bar -->
+    <div class="welcome-top">
+      <div class="welcome-wordmark">
+        <span class="welcome-badge">NR</span>
+        <span>NAUFAL RAFIF</span>
+      </div>
+      <span class="welcome-meta-init">// INITIALIZING PORTFOLIO</span>
+    </div>
+
+    <!-- Center Headline -->
+    <div class="welcome-center">
+      <h1 class="welcome-headline">WELCOME.</h1>
+      <p class="welcome-subtext">INFORMATICS ENGINEER · WEB DEVELOPER</p>
+    </div>
+
+    <!-- Bottom Progress -->
+    <div class="welcome-bottom">
+      <div class="welcome-progress-info">
+        <span>System Loading...</span>
+        <span id="welcomeProgressText">0%</span>
+      </div>
+      <div class="welcome-progress-track">
+        <div id="welcomeProgressFill" class="welcome-progress-fill"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ========================================================================
+       2. NAVBAR (Swiss Minimalist)
+       ======================================================================== -->
+  <header class="navbar" id="topNavbar">
+    <div class="container navbar-inner">
+      
+      <!-- Brand Logo on Left -->
+      <a href="#hero" class="nav-brand">
+        <span class="nav-brand-badge">NR</span>
+        <span>NAUFAL RAFIF</span>
+      </a>
+
+      <!-- Desktop Links in Center -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certifications" class="nav-link">Certs</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#value" class="nav-link">Why Hire Me</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="https://wa.me/6289653657834?text=Hello%20Naufal,%20I'm%20interested%20in%20your%20portfolio." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i>
+        </a>
+        <button id="mobileNavToggle" class="nav-toggle-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="menuToggleIcon"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawer" class="mobile-nav-drawer">
+      <div class="mobile-nav-items">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#certifications" class="mobile-nav-link">Certifications</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#value" class="mobile-nav-link">Why Hire Me</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </div>
+      <a href="https://wa.me/6289653657834" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Direct
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         3. HERO SECTION — PRIORITAS UTAMA (Swiss Editorial Typography)
+         ======================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        
+        <!-- Floating Pill Badges Layer -->
+        <div class="hero-badges-layer">
+          <div class="hero-badges-left">
+            <span class="pill-badge rotate-neg-2">
+              <span class="status-dot" style="width: 7px; height: 7px; animation: none; background: #000;"></span>
+              SOFTWARE DEVELOPMENT
+            </span>
+            <span class="pill-badge rotate-pos-1">
+              SYSTEM ANALYSIS
+            </span>
+            <span class="pill-badge rotate-neg-1">
+              INFORMATICS ENGINEERING
+            </span>
+          </div>
+
+          <div class="hero-badges-right">
+            <span class="pill-badge rotate-pos-2">
+              DATA MANAGEMENT
+            </span>
+            <span class="pill-badge rotate-neg-2">
+              ADMINISTRATIVE SUPPORT
+            </span>
+            <div class="circle-icon-btn">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <a href="#about" class="circle-icon-btn" style="background-color: #000000; color: #FFFFFF;" title="Scroll down">
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Oversized Headline: The Developer Name -->
+        <h1 class="hero-headline">
+          NAUFAL RAFIF
+        </h1>
+
+        <!-- Monospace Developer Initialization Text -->
+        <div class="hero-dev-text">
+          <p>
+            <strong>// sys.init:</strong> naufal_rafif v2026.10 &bull; <strong>status:</strong> open_to_work<br>
+            <strong>// background:</strong> informatics_engineering &bull; <strong>focus:</strong> software_development, system_analysis, data_management<br>
+            <strong>// experience:</strong> finance_administration &bull; <strong>stack:</strong> [java, php, mysql, html5, css3]
+          </p>
+        </div>
+      </div>
+
+      <!-- 4-Part Horizontal Information Bar -->
+      <div class="hero-info-bar">
+        <div class="container" style="padding-left: 0; padding-right: 0;">
+          <div class="hero-info-grid">
+            
+            <!-- Col 1: Status Ketersediaan Kerja -> Direct to Contact -->
+            <a href="#contact" class="hero-info-col" title="Contact Naufal (Open to Work)">
+              <span class="status-dot"></span>
+              <div style="flex: 1;">
+                <span class="hero-info-label">Work Status</span>
+                <span class="hero-info-value">Open to Work</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square link-indicator" style="font-size: 0.75rem; opacity: 0.7;" aria-hidden="true"></i>
+            </a>
+
+            <!-- Col 2: Domisili -> Direct to Contact -->
+            <a href="#contact" class="hero-info-col" title="Location: Bojonggede, Bogor">
+              <i class="fa-solid fa-location-dot" style="font-size: 1rem;"></i>
+              <div style="flex: 1;">
+                <span class="hero-info-label">Domicile</span>
+                <span class="hero-info-value">Bojonggede, Kab. Bogor, Jawa Barat &bull; IDN</span>
+              </div>
+            </a>
+
+            <!-- Col 3: Tanggal Dinamis -->
+            <div class="hero-info-col" title="Current Local Time">
+              <i class="fa-regular fa-calendar" style="font-size: 1rem;"></i>
+              <div style="flex: 1;">
+                <span class="hero-info-label">Local Date</span>
+                <span class="hero-info-value" id="currentDateDisplay">14 OCTOBER 2026</span>
+              </div>
+            </div>
+
+            <!-- Col 4: Scroll Indicator -> Direct to About -->
+            <a href="#about" class="hero-info-col" title="Explore Naufal's Profile">
+              <div style="flex: 1;">
+                <span class="hero-info-label">Explore</span>
+                <span class="hero-info-value">Scroll Down</span>
+              </div>
+              <i class="fa-solid fa-arrow-down arrow-indicator" style="font-size: 0.95rem;"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. ABOUT ME SECTION — PRIORITAS KEDUA (Modular Editorial Cards)
+         ======================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="section-tag-pill">01 // About Me</span>
+          <div class="section-tag-line"></div>
+        </div>
+
+        <div class="about-modular-grid">
+          
+          <!-- Card 1: Introduction Card -->
+          <div class="brutalist-card card-intro">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+                <span style="font-size: 1.25rem;">👋</span>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Introduction</span>
+              </div>
+
+
+            <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 900; text-transform: uppercase; letter-spacing: -0.04em; margin-bottom: 20px; line-height: 1.1;">
+              Hi, I'm Naufal Rafif.
+            </h2>
+
+            <p style="font-size: 0.95rem; color: #404040; line-height: 1.7; margin-bottom: 16px;">
+              A fresh graduate in Informatics Engineering from <strong>Universitas Indraprasta PGRI Jakarta</strong>, with a solid understanding of information technology, particularly system analysis and application development. Skilled in programming, information system design, database management, and application testing through academic projects.
+            </p>
+
+            <p style="font-size: 0.95rem; color: #404040; line-height: 1.7; margin-bottom: 28px;">
+              Equipped with analytical thinking, problem-solving, communication, and teamwork skills. Detail-oriented, responsible, and eager to learn, with the ability to adapt to professional work environments and contribute to meeting an organization's information technology needs.
+            </p>
+            </div>
+
+            <div style="padding-top: 20px; border-top: 1px solid var(--border-light);">
+            <div class="about-cta-group">
+
+              <!-- Primary CTA: Download Resume -->
+              <a href="assets/documents/CV ATS Naufal Rafif.pdf"
+                class="btn btn-primary about-cta-primary"
+                download
+                id="downloadResumeBtn">
+                <i class="fa-solid fa-download"></i>
+                <span>Download Resume</span>
+              </a>
+
+              <!-- Secondary CTAs Row -->
+              <div class="about-cta-secondary-row">
+                <a href="assets/documents/Portofolio Naufal Rafif.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary about-cta-secondary"
+                  title="View Portfolio PDF"
+                  id="viewPortfolioBtn">
+                  <i class="fa-regular fa-file-pdf"></i>
+                  <span>Portfolio PDF</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.65rem; opacity: 0.65;"></i>
+                </a>
+
+                <a href="#contact" class="btn btn-secondary about-cta-secondary" id="letsConnectBtn">
+                  <span>Let's Connect</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          </div>
+
+          <!-- Card 2: Profile Photo Card -->
+          <div class="brutalist-card card-profile">
+            <div>
+              <div class="profile-photo-frame">
+                <img src="assets/gambar/nopal.png" alt="Official Photo of Naufal Rafif">
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <h3 style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase;">Naufal Rafif, S.KOM.</h3>
+                <span style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; color: var(--status-green); background-color: var(--status-green-bg); border: 1px solid rgba(16, 185, 129, 0.3); padding: 2px 8px; border-radius: var(--radius-pill);">
+                  <span class="status-dot" style="width: 6px; height: 6px; animation: none;"></span>
+                  Open to Work
+                </span>
+              </div>
+
+              <p style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); margin-bottom: 24px;">
+                Bachelor of Informatics Engineering &bull; Bojonggede, Bogor
+              </p>
+            </div>
+
+            <a href="#contact" class="btn btn-primary" style="width: 100%;">
+              <span>Hire Me</span>
+              <i class="fa-solid fa-paper-plane" style="font-size: 0.75rem;"></i>
+            </a>
+          </div>
+
+          <!-- Card 3: Education Card -->
+          <div class="brutalist-card card-education">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Education</span>
+                </div>
+                <span style="background-color: #000000; color: #FFFFFF; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 800; padding: 3px 10px; border-radius: var(--radius-pill); letter-spacing: 0.05em; text-transform: uppercase;">
+                  GRADUATED 2026
+                </span>
+              </div>
+
+              <h3 style="font-size: 1.15rem; font-weight: 900; text-transform: uppercase; margin-bottom: 20px;">Academic Background</h3>
+
+              <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="padding-bottom: 14px; border-bottom: 1px solid var(--border-light);">
+                  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; gap: 8px;">
+                    <strong style="font-size: 0.92rem; text-transform: uppercase;">UNIVERSITAS INDRAPRASTA PGRI (UNINDRA)</strong>
+                    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); white-space: nowrap;">2022 – 2026</span>
+                  </div>
+                  <div style="font-size: 0.82rem; font-weight: 700;">S1 Teknik Informatika</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Jakarta, Indonesia</div>
+                </div>
+
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; gap: 8px;">
+                    <strong style="font-size: 0.92rem; text-transform: uppercase;">SMK MEKANIK CIBINONG</strong>
+                    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); white-space: nowrap;">2019 – 2022</span>
+                  </div>
+                  <div style="font-size: 0.82rem; font-weight: 700;">Teknik Komputer dan Jaringan (TKJ)</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Bogor, Indonesia</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 16px; border-top: 1px solid var(--border-light); font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">
+              &bull; Status: IT Graduate
+            </div>
+          </div>
+
+          <!-- Card 4: Tech Stack Card -->
+          <div class="brutalist-card card-tech-stack">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+                <i class="fa-solid fa-bars"></i>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Capabilities</span>
+              </div>
+
+              <h3 style="font-size: 1.15rem; font-weight: 900; text-transform: uppercase; margin-bottom: 20px;">Tech Stack &amp; Tools</h3>
+
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 6px;">Programming &amp; Web</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span class="pill-badge" style="font-size: 0.68rem; padding: 3px 8px;">JAVA</span>
+                    <span class="pill-badge" style="font-size: 0.68rem; padding: 3px 8px;">PHP</span>
+                    <span class="pill-badge" style="font-size: 0.68rem; padding: 3px 8px;">HTML5</span>
+                    <span class="pill-badge" style="font-size: 0.68rem; padding: 3px 8px;">CSS3</span>
+                  </div>
+                </div>
+
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 6px;">Database</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span class="pill-badge" style="font-size: 0.68rem; padding: 3px 8px;">MYSQL</span>
+                    <span class="pill-badge" style="font-size: 0.68rem; padding: 3px 8px;">SQL</span>
+                  </div>
+                </div>
+
+                <div>
+                  <span style="font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 6px;">Development Tools</span>
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <span class="pill-badge" style="font-size: 0.68rem; padding: 3px 8px;">NETBEANS</span>
+                    <span class="pill-badge" style="font-size: 0.68rem; padding: 3px 8px;">VS CODE</span>
+                    <span class="pill-badge" style="font-size: 0.68rem; padding: 3px 8px;">GIT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-light); font-family: var(--font-mono); font-size: 0.72rem; color: #5B8A6F;">
+              Academic &amp; Production Stack
+            </div>
+          </div>
+
+          <!-- Card 5: My Focus Card (Solid Black) -->
+          <div class="brutalist-card card-my-focus">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; color: #888888;">
+                <i class="fa-solid fa-bullseye" style="color: #FFFFFF;"></i>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;">Direction</span>
+              </div>
+
+              <h3 style="font-size: 1.15rem; font-weight: 900; text-transform: uppercase; color: #FFFFFF; margin-bottom: 16px;">MY FOCUS</h3>
+
+              <p style="font-size: 0.88rem; color: #CCCCCC; line-height: 1.65; margin-bottom: 20px;">
+                Building structured software architectures, intelligent systems, and data-driven solutions. Focused on rule-based inference, multi-criteria decision support, and actionable transactional data mining.
+              </p>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                <span style="font-family: var(--font-mono); font-size: 0.68rem; font-weight: 800; padding: 5px 12px; border-radius: 9999px; background-color: #202020; border: 1px solid #333333; color: #FFFFFF; letter-spacing: 0.05em; white-space: nowrap;">
+                  EXPERT SYSTEMS
+                </span>
+                <span style="font-family: var(--font-mono); font-size: 0.68rem; font-weight: 800; padding: 5px 12px; border-radius: 9999px; background-color: #202020; border: 1px solid #333333; color: #FFFFFF; letter-spacing: 0.05em; white-space: nowrap;">
+                  DECISION SUPPORT
+                </span>
+                <span style="font-family: var(--font-mono); font-size: 0.68rem; font-weight: 800; padding: 5px 12px; border-radius: 9999px; background-color: #202020; border: 1px solid #333333; color: #FFFFFF; letter-spacing: 0.05em; white-space: nowrap;">
+                  DESKTOP &amp; WEB POS
+                </span>
+              </div>
+            </div>
+
+            <div style="padding-top: 16px; border-top: 1px solid #222222; font-family: var(--font-mono); font-size: 0.72rem; color: #888888;">
+              &bull; Ready to Deploy
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. CORE COMPETENCIES TABLE
+         ======================================================================== -->
+    <section id="skills" class="section" style="border-top: var(--border-width) solid var(--border-color);">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="section-tag-pill">02 // Core Competencies</span>
+          <div class="section-tag-line"></div>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+          <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 900; text-transform: uppercase;">
+            CORE COMPETENCIES
+          </h2>
+        </div>
+
+        <div class="competencies-table-wrap">
+          <table class="competencies-table">
+            <thead>
+              <tr>
+                <th style="width: 28%;">CORE COMPETENCY</th>
+                <th style="width: 36%;">SKILLS &amp; APPROACH</th>
+                <th style="width: 36%;">PRACTICAL APPLICATION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Analytical Thinking &amp; Problem-Solving</strong></td>
+                <td>Logical reasoning, requirements analysis, structured problem-solving, and systematic decision-making.</td>
+                <td style="color: var(--text-secondary);">Analyzing requirements, identifying problems, and developing structured solutions through academic and software projects.</td>
+              </tr>
+              <tr>
+                <td><strong>Data Management &amp; Accuracy</strong></td>
+                <td>Data entry, data organization, document verification, record keeping, and attention to detail.</td>
+                <td style="color: var(--text-secondary);">Supporting accurate records, structured documentation, data processing, and information management.</td>
+              </tr>
+              <tr>
+                <td><strong>Digital &amp; Technical Skills</strong></td>
+                <td>Web development, database management, programming, and digital productivity tools.</td>
+                <td style="color: var(--text-secondary);">Developing web-based applications, managing structured data, and supporting digital workflows.</td>
+              </tr>
+              <tr>
+                <td><strong>Administrative &amp; Documentation Support</strong></td>
+                <td>Document organization, data recording, administrative support, and systematic filing.</td>
+                <td style="color: var(--text-secondary);">Supporting organized documentation, accurate records, and efficient administrative processes.</td>
+              </tr>
+              <tr>
+                <td><strong>Communication &amp; Adaptability</strong></td>
+                <td>Team collaboration, clear communication, task coordination, and willingness to learn new workflows.</td>
+                <td style="color: var(--text-secondary);">Working with different task requirements, following team procedures, and adapting to professional work environments.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. PROFESSIONAL EXPERIENCE
+         ======================================================================== -->
+    <section id="experience" class="section" style="border-top: var(--border-width) solid var(--border-color);">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="section-tag-pill">03 // Professional Experience</span>
+          <div class="section-tag-line"></div>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+          <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 900; text-transform: uppercase;">
+            Professional Experience
+          </h2>
+        </div>
+
+        <div class="experience-list" style="display: flex; flex-direction: column; gap: 24px;">
+          
+          <!-- Experience 1: PT Bangun Cipta Azima Mandiri -->
+          <div class="brutalist-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+              <div>
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px;">
+                  <h3 style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; margin: 0;">PT Bangun Cipta Azima Mandiri</h3>
+                  <span style="font-family: var(--font-mono); font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: var(--radius-pill); background-color: var(--bg-muted); border: 1px solid var(--border-light); color: var(--text-secondary);">
+                    Internship
+                  </span>
+                </div>
+                <p style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary);">Finance Administration Intern</p>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: var(--radius-pill); border: 1px solid var(--border-color); background-color: var(--bg-secondary); white-space: nowrap;">
+                April 2026 – September 2026
+              </span>
+            </div>
+
+            <p style="font-size: 0.92rem; color: #404040; line-height: 1.7; margin-bottom: 14px;">
+              Supported finance administration activities, including transaction data entry, financial document checking and filing, invoice verification, and the preparation of transaction summaries and payment records. Assisted with basic data reconciliation and maintained organized, accurate financial documentation in accordance with the Finance team's instructions.
+            </p>
+
+            <ul style="font-size: 0.92rem; color: #404040; line-height: 1.7; margin-bottom: 20px; padding-left: 20px;">
+              <li>Entered transaction data and prepared transaction summaries and payment records.</li>
+              <li>Checked, verified, and organized invoices and financial documents.</li>
+              <li>Assisted with basic data reconciliation and maintained accurate records.</li>
+              <li>Supported systematic financial document filing in accordance with the Finance team's instructions.</li>
+            </ul>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; padding-top: 16px; border-top: 1px solid var(--border-light);">
+              <span class="pill-badge" style="font-size: 0.68rem; padding: 4px 10px;">FINANCE ADMINISTRATION</span>
+              <span class="pill-badge" style="font-size: 0.68rem; padding: 4px 10px;">DATA ENTRY</span>
+              <span class="pill-badge" style="font-size: 0.68rem; padding: 4px 10px;">DOCUMENTATION</span>
+              <span class="pill-badge" style="font-size: 0.68rem; padding: 4px 10px;">INVOICE VERIFICATION</span>
+              <span class="pill-badge" style="font-size: 0.68rem; padding: 4px 10px;">DATA RECONCILIATION</span>
+            </div>
+          </div>
+
+          <!-- Experience 2: Kantor Kecamatan Cibinong -->
+          <div class="brutalist-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; margin: 0 0 4px 0;">Kantor Kecamatan Cibinong</h3>
+                <p style="font-size: 0.95rem; font-weight: 700; color: var(--text-secondary);">Field Industrial Internship (PKL) &bull; Administration &amp; Operations &bull; Bogor, Indonesia</p>
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: var(--radius-pill); border: 1px solid var(--border-color); background-color: var(--bg-secondary); white-space: nowrap;">
+                September - Desember 2021
+              </span>
+            </div>
+
+            <ul style="font-size: 0.92rem; color: #404040; line-height: 1.7; margin-bottom: 20px; padding-left: 20px;">
+              <li>Assisted with daily office administrative and operational tasks with diligence and discipline.</li>
+              <li>Managed, verified, and inputted administrative documents and data for public service records.</li>
+              <li>Supported daily community service processes, document filing, and routine municipal operations.</li>
+            </ul>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; padding-top: 16px; border-top: 1px solid var(--border-light);">
+              <span class="pill-badge" style="font-size: 0.68rem; padding: 4px 10px;">DATA ENTRY</span>
+              <span class="pill-badge" style="font-size: 0.68rem; padding: 4px 10px;">DOCUMENT MANAGEMENT</span>
+              <span class="pill-badge" style="font-size: 0.68rem; padding: 4px 10px;">PUBLIC ADMINISTRATION</span>
+              <span class="pill-badge" style="font-size: 0.68rem; padding: 4px 10px;">GOOGLE WORKSPACE</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================================
+         6.5. LICENSES & CERTIFICATIONS
+         ======================================================================== -->
+    <section id="certifications" class="section" style="border-top: var(--border-width) solid var(--border-color);">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="section-tag-pill">04 // Certifications</span>
+          <div class="section-tag-line"></div>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+          <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 900; text-transform: uppercase;">
+            Licenses &amp; Certifications
+          </h2>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 8px;">
+            Professional credentials and verified competencies.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 24px;">
+
+          <!-- Cert 1: Dicoding - Belajar Dasar Pemrograman Web -->
+          <div class="brutalist-card" style="padding: 28px;">
+            <div>
+              <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px;">
+                <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 10px; background-color: #000; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-award" style="color: #FFF; font-size: 1.2rem;"></i>
+                </div>
+                <div style="flex: 1;">
+                  <h3 style="font-size: 1.05rem; font-weight: 900; text-transform: uppercase; margin-bottom: 4px; line-height: 1.25;">
+                    Belajar Dasar Pemrograman Web
+                  </h3>
+                  <p style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); margin-bottom: 2px;">
+                    Dicoding Indonesia
+                  </p>
+                  <p style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-subtle);">
+                    Google Developers Authorized Training Partner
+                  </p>
+                </div>
+              </div>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+                <span style="font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-pill); border: 1px solid var(--border-color); background-color: var(--bg-secondary);">
+                  HTML5
+                </span>
+                <span style="font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-pill); border: 1px solid var(--border-color); background-color: var(--bg-secondary);">
+                  CSS3
+                </span>
+                <span style="font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-pill); border: 1px solid var(--border-color); background-color: var(--bg-secondary);">
+                  FLEXBOX LAYOUT
+                </span>
+                <span style="font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-pill); border: 1px solid var(--border-color); background-color: var(--bg-secondary);">
+                  RESPONSIVE WEB
+                </span>
+              </div>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 16px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-bottom: 16px;">
+                <span><i class="fa-regular fa-calendar" style="margin-right: 4px;"></i> Dec 2024</span>
+                <span><i class="fa-regular fa-clock" style="margin-right: 4px;"></i> Valid until Dec 2027</span>
+                <span><i class="fa-solid fa-fingerprint" style="margin-right: 4px;"></i> 1RXY29W41XVM</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; padding-top: 16px; border-top: 1px solid var(--border-light);">
+              <a href="https://www.dicoding.com/certificates/1RXY29W41XVM" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="flex: 1; justify-content: center;">
+                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i>
+                <span>Verify Certificate</span>
+              </a>
+              <a href="assets/documents/sertifikat.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="flex: 1; justify-content: center;">
+                <i class="fa-solid fa-file-pdf" style="font-size: 0.75rem;"></i>
+                <span>View PDF</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. FEATURED PROJECTS
+         ======================================================================== -->
+    <section id="projects" class="section" style="border-top: var(--border-width) solid var(--border-color);">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="section-tag-pill">05 // Projects</span>
+          <div class="section-tag-line"></div>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+          <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 900; text-transform: uppercase;">
+            Featured Projects &amp; Research
+          </h2>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: WSVisualJKT -->
+          <div class="brutalist-card project-card">
+            <div>
+              <div class="project-visual-wrap">
+                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;"><source src="assets/gambar/wsvisual.mp4" type="video/mp4"></video>
+              </div>
+              <div class="project-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                </div>
+                <h3 style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; margin-bottom: 8px;">WSVisualJKT &bull; Company Profile</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+                  A professional company profile website for a creative agency offering photography, cinematography, trip documentation, and aerial drone services.
+                </p>
+                <ul style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px;">
+                  <li>Showcase of responsive video reels and structured photo galleries.</li>
+                  <li>Automated reservation and inquiry form directly integrated with WhatsApp.</li>
+                  <li>Semantic on-page SEO optimization and responsive cross-device layout.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">PHP, MySQL, HTML5, CSS3</span>
+              <button onclick="openProjectModal('wsvisual')" class="btn btn-secondary btn-sm">
+                <span>Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2: Diagnosa Penyakit Ikan Nila -->
+          <div class="brutalist-card project-card">
+            <div>
+              <div class="project-visual-wrap">
+                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                  <source src="assets/gambar/ikan.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="project-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                </div>
+                <h3 style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; margin-bottom: 8px;">Tilapia Disease Diagnostic System</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+                  A Java desktop expert system designed to assist aquaculture farmers in diagnosing tilapia diseases using Certainty Factor and Forward Chaining.
+                </p>
+                <ul style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px;">
+                  <li>Rule-based inference engine integrating CF and Forward Chaining logic.</li>
+                  <li>NetBeans graphical user interface for intuitive clinical symptom selection.</li>
+                  <li>Comprehensive medicinal recommendations and disease prevention guidelines.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">Java Swing, MySQL, NetBeans</span>
+              <button onclick="openProjectModal('ikannila')" class="btn btn-secondary btn-sm">
+                <span>Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3: Sistem Pakar Minat & Bakat -->
+          <div class="brutalist-card project-card">
+            <div>
+              <div class="project-visual-wrap">
+                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;"><source src="assets/gambar/minatbakat.mp4" type="video/mp4"></video>
+              </div>
+              <div class="project-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                </div>
+                <h3 style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; margin-bottom: 8px;">Talent &amp; Career Expert System</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+                  An intelligent advisory system to identify career inclinations and personal interests using the Certainty Factor (CF) method.
+                </p>
+                <ul style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px;">
+                  <li>Computation of Measure of Belief (MB) and Measure of Disbelief (MD).</li>
+                  <li>Parallel multi-question expert rule inference mechanism.</li>
+                  <li>Targeted study program and career path recommendations.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">PHP, MySQL, Certainty Factor</span>
+              <button onclick="openProjectModal('minatbakat')" class="btn btn-secondary btn-sm">
+                <span>Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 4: Sistem Analisis Penjualan Apriori -->
+          <div class="brutalist-card project-card">
+            <div>
+              <div class="project-visual-wrap">
+                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;"><source src="assets/gambar/apriori.mp4" type="video/mp4"></video>
+              </div>
+              <div class="project-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                </div>
+                <h3 style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; margin-bottom: 8px;">Sales Transaction Mining (Apriori)</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+                  A data mining system analyzing retail purchasing patterns through Association Rule Mining and Market Basket Analysis.
+                </p>
+                <ul style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px;">
+                  <li>Frequent Itemset extraction based on configurable Minimum Support thresholds.</li>
+                  <li>Association rule generation evaluated with Minimum Confidence metrics.</li>
+                  <li>Actionable insights for product cross-selling, bundling, and shelf layout.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">PHP, MySQL, Apriori Algorithm</span>
+              <button onclick="openProjectModal('apriori')" class="btn btn-secondary btn-sm">
+                <span>Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 5: SPK Kegiatan Bazar (AHP) -->
+          <div class="brutalist-card project-card">
+            <div>
+              <div class="project-visual-wrap">
+                <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; filter: contrast(120%);"><source src="assets/gambar/bazar.mp4" type="video/mp4"></video>
+              </div>
+              <div class="project-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                </div>
+                <h3 style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; margin-bottom: 8px;">Bazaar Event Selection DSS (AHP)</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+                  A Decision Support System utilizing the Analytical Hierarchy Process (AHP) for objective prioritization of bazaar event vendors.
+                </p>
+                <ul style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px;">
+                  <li>Construction of Saaty 1–9 pairwise comparison matrices.</li>
+                  <li>Automated consistency verification (Consistency Ratio &le; 0.10).</li>
+                  <li>Objective multi-criteria ranking of alternative participants.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">Java, MySQL, AHP, iReport</span>
+              <button onclick="openProjectModal('spkbazar')" class="btn btn-secondary btn-sm">
+                <span>Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 6: Super Cellular -->
+          <div class="brutalist-card project-card">
+            <div>
+              <div class="project-visual-wrap">
+                <img src="assets/gambar/cellular.png" alt="Super Cellular POS">
+              </div>
+              <div class="project-body">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                </div>
+                <h3 style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; margin-bottom: 8px;">Super Cellular &bull; POS &amp; Inventory</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+                  An integrated Point of Sale (POS) and inventory tracking application for telecommunication and mobile accessory outlets.
+                </p>
+                <ul style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; padding-left: 18px;">
+                  <li>Fast transaction checkout module with automated receipt printing.</li>
+                  <li>Real-time inventory control and automated low-stock threshold alerts.</li>
+                  <li>Periodic sales analytics, net profit calculation, and printable reporting.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">Java OOP, MySQL, JasperReports</span>
+              <button onclick="openProjectModal('supercellular')" class="btn btn-secondary btn-sm">
+                <span>Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         8. WHY HIRE ME
+         ======================================================================== -->
+    <section id="value" class="section" style="border-top: var(--border-width) solid var(--border-color);">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="section-tag-pill">06 // Value Proposition</span>
+          <div class="section-tag-line"></div>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+          <h2 style="font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 900; text-transform: uppercase;">
+            Why Hire Me?
+          </h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          
+          <!-- Card 1: Analytical Thinking & Problem-Solving -->
+          <div class="brutalist-card">
+            <div>
+              <div class="circle-icon-btn" style="width: 48px; height: 48px; font-size: 1.1rem; background-color: #000; color: #FFF; margin-bottom: 20px;">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 900; text-transform: uppercase; margin-bottom: 12px; letter-spacing: -0.01em;">
+                ANALYTICAL THINKING &amp; PROBLEM-SOLVING
+              </h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 24px;">
+                Able to analyze complex challenges logically and methodically, comprehend requirements, and formulate effective solutions through systematic, data-driven approaches.
+              </p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; padding-top: 16px; border-top: 1px solid var(--border-light);">
+              <span class="pill-badge" style="font-size: 0.65rem; padding: 4px 10px;">ANALYTICAL THINKING</span>
+              <span class="pill-badge" style="font-size: 0.65rem; padding: 4px 10px;">PROBLEM-SOLVING</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Accuracy & Data Integrity -->
+          <div class="brutalist-card">
+            <div>
+              <div class="circle-icon-btn" style="width: 48px; height: 48px; font-size: 1.1rem; background-color: #000; color: #FFF; margin-bottom: 20px;">
+                <i class="fa-solid fa-check-double"></i>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 900; text-transform: uppercase; margin-bottom: 12px; letter-spacing: -0.01em;">
+                ACCURACY &amp; DATA INTEGRITY
+              </h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 24px;">
+                Accustomed to meticulous data processing, document verification, and precise record keeping. Prioritizing accuracy, organization, and consistency across all assigned tasks.
+              </p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; padding-top: 16px; border-top: 1px solid var(--border-light);">
+              <span class="pill-badge" style="font-size: 0.65rem; padding: 4px 10px;">DATA MANAGEMENT</span>
+              <span class="pill-badge" style="font-size: 0.65rem; padding: 4px 10px;">DOCUMENTATION</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Adaptability & Digital Fluency -->
+          <div class="brutalist-card">
+            <div>
+              <div class="circle-icon-btn" style="width: 48px; height: 48px; font-size: 1.1rem; background-color: #000; color: #FFF; margin-bottom: 20px;">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <h3 style="font-size: 1.15rem; font-weight: 900; text-transform: uppercase; margin-bottom: 12px; letter-spacing: -0.01em;">
+                ADAPTABILITY &amp; DIGITAL FLUENCY
+              </h3>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 24px;">
+                Adept at leveraging digital tools to streamline workflows, rapidly mastering new technologies, and adapting smoothly to evolving team dynamics and operational environments.
+              </p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 6px; padding-top: 16px; border-top: 1px solid var(--border-light);">
+              <span class="pill-badge" style="font-size: 0.65rem; padding: 4px 10px;">DIGITAL TOOLS</span>
+              <span class="pill-badge" style="font-size: 0.65rem; padding: 4px 10px;">CONTINUOUS LEARNING</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         9. CONTACT & FOOTER
+         ======================================================================== -->
+    <section id="contact" class="section" style="border-top: var(--border-width) solid var(--border-color); text-align: center;">
+      <div class="container" style="max-width: 800px;">
+        
+        <span class="pill-badge" style="margin-bottom: 24px;">GET IN TOUCH</span>
+
+        <h2 style="font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 900; text-transform: uppercase; margin-bottom: 36px; letter-spacing: -0.03em;">
+          LET'S CONNECT.
+        </h2>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+          <button onclick="copyEmail()" class="btn btn-secondary" title="Copy Email">
+            <i class="fa-regular fa-envelope"></i>
+            <span>naufal.rafif.2004@gmail.com</span>
+          </button>
+          <a href="https://linkedin.com/in/naufalrafif2480" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/nopaall-jo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.instagram.com/nopaall__/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://wa.me/6289653657834?text=Hello%20Naufal,%20I'm%20interested%20in%20your%20portfolio." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp Direct</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-copy">
+        &copy; 2026 Naufal Rafif.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog for Project Details -->
+  <div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Project Details">
+    <div class="modal-dialog">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close modal dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="appToast" class="toast" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check" style="color: var(--status-green);"></i>
+    <span id="toastText">Email copied to clipboard!</span>
+  </div>
+
+</body>
+</html>
